@@ -103,7 +103,13 @@ footer {
     grid-area: bios;
 }
 
-.profile_info {
+.profile__info {
+}
+
+.profile__img {
+    width: 20rem;
+    height: auto;
+    border-radius: 5%;
 }
 
 .review {
