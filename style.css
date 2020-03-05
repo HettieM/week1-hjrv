@@ -103,10 +103,10 @@ footer {
     grid-area: bios;
 }
 
-.profile_info {
+.profile__info {
 }
 
-.profile_img {
+.profile__img {
     width: 20rem;
     height: auto;
     border-radius: 5%;
