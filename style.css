@@ -7,6 +7,9 @@
     box-sizing: border-box;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
+
+    /* border: 1px solid black; */
+    margin: 0.1rem;
 }
 
 :root {
@@ -50,6 +53,7 @@ section {
     padding: 1rem;
 }
 
+
 footer {
     background-color: var(--colour4);
     color: var(--colour2);
@@ -61,6 +65,7 @@ footer {
     color: var(--colour5);
     grid-template-areas: 
     "nav"
+    "title"
     "about-us"
     "bios"
     "reviews"
@@ -84,6 +89,10 @@ footer {
     justify-content: space-evenly;
 }
 
+.title {
+    grid-area: title;
+}
+
 .about {
     grid-area: about-us;
 }
@@ -94,6 +103,7 @@ footer {
 
 .about__name {
     grid-area: about-name;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .about__intro {
@@ -121,6 +131,7 @@ footer {
 
 .contact {
     grid-area:contact;
+    max-width: 50rem;
 }
 
 .contact__form {
@@ -157,25 +168,33 @@ footer {
 .footer {
     grid-area:footer;
 }
-.contact {
-    width: 50rem;
-    /* margin-left: auto;
-    margin-right: auto; */
-}
 
-/* @media only screen and (min-width:600px) {
+@media only screen and (min-width:600px) {
 
+    article {
+        max-width: 30rem;
+    }
+    
     .wrapper {
         display:grid;
         grid-template-areas: 
-        "about-logo about-name"
-        "nav     about-us"
-        "nav      bios"
-        "nav      bios"
-        "nav  reviews"
-        "nav  contact"
-        "footer   footer"
+            "title title"
+            "nav about-us"
+            "nav bios"
+            "nav reviews"
+            "nav contact"
+            "footer footer"
         ;
         width:100%;
     }
-} */
+
+    .nav {
+        max-width: 8.5rem;
+    }
+
+    .nav__items {
+        flex-direction: column;
+    }
+
+
+}
