@@ -106,6 +106,12 @@ footer {
 .profile_info {
 }
 
+.profile_img {
+    width: 20rem;
+    height: auto;
+    border-radius: 5%;
+}
+
 .review {
     grid-area: reviews;
 }
