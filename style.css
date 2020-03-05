@@ -48,18 +48,10 @@
 
 .profile {
     grid-area: bios;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .profile_info {
-    flex-direction: column;
 }
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .review {
