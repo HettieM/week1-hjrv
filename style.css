@@ -21,14 +21,14 @@
     ;
 }
 
-.header {
+.nav {
     grid-area: nav;
 }
 
-.header__navbar {
+.nav__navbar {
 }
 
-.header__items {
+.nav__items {
 }
 
 .about {
