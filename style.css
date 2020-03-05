@@ -1,16 +1,64 @@
 * {                     
     border: 0;
-	margin: 0.25em; /* TEMPORARY CODE */
+	margin: 0;
 	padding: 0;
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-    border: 1px solid black; /* TEMPORARY CODE */
-    background-color: hsla(0,0%,0%,0.08); /* TEMPORARY CODE */
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --colour1: hsl(202, 15%, 95%);
+    --colour2: hsl(205, 24%, 88%);
+    --colour3: hsl(210, 50%, 40%);
+    --colour4: hsl(215, 23%, 41%);
+    --colour5: hsl(222, 32%, 15%);
+    --colour6: pink;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+a {
+    color: var(--colour3);
+    border-bottom: 0.15rem dotted var(--colour4);
+}
+
+a:hover {
+    color: var(--colour5);
+    border: 0.15rem dotted var(--colour4);
+}
+
+section {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--colour4);
+    color: var(--colour2);
 }
 
 .wrapper{
     display: grid;
+    background-color: var(--colour2);
+    color: var(--colour5);
     grid-template-areas: 
     "nav"
     "about-us"
@@ -23,6 +71,8 @@
 
 .nav {
     grid-area: nav;
+    background-color: var(--colour5);
+    color: var(--colour2);
 }
 
 .nav__navbar {
@@ -55,7 +105,6 @@
 
 .profile_info {
 }
-}
 
 .review {
     grid-area: reviews;
@@ -75,7 +124,7 @@
     grid-area:footer;
 }
 
-@media only screen and (min-width:600px) {
+/* @media only screen and (min-width:600px) {
 
     .wrapper {
         display:grid;
@@ -90,4 +139,4 @@
         ;
         width:100%;
     }
-}
+} */
