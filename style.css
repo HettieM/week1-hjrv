@@ -9,6 +9,10 @@
     background-color: hsla(0,0%,0%,0.08);
 }
 
+a {
+    display:inline;
+}
+
 .wrapper{
     display: grid;
     grid-template-areas: 
@@ -36,9 +40,11 @@
 }
 
 .about__logo {
+    grid-area: about-logo;
 }
 
 .about__name {
+    grid-area: about-name;
 }
 
 .about__intro {
@@ -46,10 +52,19 @@
 
 .profile {
     grid-area: bios;
+    display:flex;
 }
 
 .profile_info {
     grid-area: bio;
+    display:flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .review {
@@ -70,15 +85,14 @@
     grid-area:footer;
 }
 
-@media only screen and (min-width:400px;) {
+@media only screen and (min-width:600px) {
     .wrapper {
         display:grid;
         grid-template-areas: 
-        "agency "
-        "nav     agency-name"
-        "nav about-us"
-        "nav      bio"
-        "nav      bio"
+        "about-logo about-name"
+        "nav     about-us"
+        "nav      bios"
+        "nav      bios"
         "nav  reviews"
         "nav  contact"
         "footer   footer"
