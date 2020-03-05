@@ -9,19 +9,16 @@
     background-color: hsla(0,0%,0%,0.08);
 }
 
-body {
+.wrapper{
     display:grid;
     grid-template-areas: 
-    "nav      nav"
-    "logo     agency-name"
-    "about-us about-us"
-    "bio      bio"
-    "bio      bio"
-    "reviews  reviews"
-    "contact  contact"
-    "footer   footer"
+    "nav"
+    "about-us"
+    "bios"
+    "reviews"
+    "contact"
+    "footer"
     ;
-    width:100%;
 }
 
 .header {
@@ -29,37 +26,62 @@ body {
 }
 
 .header__navbar {
-    display:flex;
 }
 
-.header__navbar--items {
-    display:flex;
-    flex-direction: row;
-    justify-self: stretch;
+.header__items {
 }
 
 .about {
     grid-area: about-us;
 }
 
+.about__logo {
+}
+
+.about__name {
+}
+
+.about__intro {
+}
+
 .profile {
-    grid-area: bio;
-    display:flex;
-    flex-wrap: wrap;
+    grid-area: bios;
 }
 
-.profile__individual {
-    width:50%;
+.profile_info {
 }
 
-.reviews {
+.review {
     grid-area: reviews;
+}
+
+.review__quote {
 }
 
 .contact {
     grid-area:contact;
 }
 
+.contact__form {
+}
+
 .footer {
     grid-area:footer;
+}
+
+@media only screen and (min-width:400px;) {
+    .wrapper{
+        display:grid;
+        grid-template-areas: 
+        "nav      nav"
+        "logo     agency-name"
+        "about-us about-us"
+        "bio      bio"
+        "bio      bio"
+        "reviews  reviews"
+        "contact  contact"
+        "footer   footer"
+        ;
+        width:100%;
+    }
 }
