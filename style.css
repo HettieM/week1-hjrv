@@ -39,9 +39,11 @@
 }
 
 .about__logo {
+    grid-area: about-logo;
 }
 
 .about__name {
+    grid-area: about-name;
 }
 
 .about__intro {
@@ -52,7 +54,7 @@
 }
 
 .profile_info {
-    grid-area: bio;
+}
 }
 
 .review {
@@ -73,15 +75,15 @@
     grid-area:footer;
 }
 
-@media only screen and (min-width:400px) {  /* TEMPORARY CODE */
+@media only screen and (min-width:600px) {
+
     .wrapper {
         display:grid;
         grid-template-areas: 
-        "agency "
-        "nav     agency-name"
-        "nav about-us"
-        "nav      bio"
-        "nav      bio"
+        "about-logo about-name"
+        "nav     about-us"
+        "nav      bios"
+        "nav      bios"
         "nav  reviews"
         "nav  contact"
         "footer   footer"
