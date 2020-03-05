@@ -53,6 +53,7 @@ section {
     padding: 1rem;
 }
 
+
 footer {
     background-color: var(--colour4);
     color: var(--colour2);
@@ -142,6 +143,10 @@ footer {
 
 @media only screen and (min-width:600px) {
 
+    article {
+        max-width: 30rem;
+    }
+    
     .wrapper {
         display:grid;
         grid-template-areas: 
