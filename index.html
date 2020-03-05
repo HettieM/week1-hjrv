@@ -68,30 +68,38 @@
     <h2 class="contact contact__header">Contact us</h2>
     <p class="contact contact__tagline">If you have a problem... if no one else can help... get in contact below</p>
     <form class="contact contact__form">
-       <label for="userName"> Name: </label>
-      <input type="text" name="userName" id="userName">
-      
-      <label for="companyName">
-        Company Name: 
-      </label>
-      <input type="text" name="companyName" id="companyName">
-
-      <label for="email">
-        Email: 
-      </label>
-      <input type="email" name="email" id="email">
-
-      <label for="telephone">
-        Telephone: 
-      </label>
-       <input type="tel" name="telephone" id="telephone">
-  
-      <label for="userMessage">
-        User Message
-      </label>
-      <textarea id="userMessage" name="userMessage" placeholder="Please provide as much information as possible about your requirements. How developed is your initial concept idea (i.e. do you know how you would like your site to look)."></textarea>
-
-      <button type="submit">Submit </button>
+      <ol class="contact contact__form contact__list">
+        <li>
+          <label for="userName"> Name: </label>
+          <input type="text" name="userName" id="userName" required>
+        </li>
+        <li>
+          <label for="companyName">
+            Company Name: 
+          </label>
+          <input type="text" name="companyName" id="companyName">
+        </li>
+        <li>
+          <label for="email">
+            Email: 
+          </label>
+          <input type="email" name="email" id="email">
+        </li>
+        <li>
+          <label for="telephone">
+            Telephone: 
+          </label>
+          <input type="tel" name="telephone" id="telephone">
+        </li>
+        <li>
+          <label for="userMessage">
+            Your Message:
+          </label><br>
+          <textarea id="userMessage" name="userMessage"
+          placeholder="Please provide as much information as possible about your requirements. How developed is your initial concept idea (i.e. do you know how you would like your site to look)."></textarea>
+        </li>
+      </ol>
+      <button class="contact contact__form contact__button" type="submit">Submit </button>
     </form>
   </section>
 
