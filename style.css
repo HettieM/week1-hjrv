@@ -9,10 +9,6 @@
     background-color: hsla(0,0%,0%,0.08);
 }
 
-a {
-    display:inline;
-}
-
 .wrapper{
     display: grid;
     grid-template-areas: 
@@ -52,18 +48,17 @@ a {
 
 .profile {
     grid-area: bios;
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .profile_info {
-    grid-area: bio;
-    display:flex;
     flex-direction: column;
 }
 
 .flex {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
