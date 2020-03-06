@@ -25,15 +25,22 @@ h3 {
     text-align: left;
 }
 
+
 a {
     color: var(--link-colour);
     border-bottom: 0.15rem dotted var(--footer-colour);
+    margin: 10rem 0 10rem;
     text-decoration: none;
 }
 
 .nav a {
     color: var(--background-colour);
     border-bottom: 0.15rem dotted var(--submit-colour);
+}
+
+a:hover {
+    color: var(--nav-colour);
+    border: 0.15rem dotted var(--footer-colour);
 }
 
 .nav a:hover {
@@ -166,7 +173,7 @@ footer {
     grid-area:footer;
 }
 
-@media only screen and (min-width:400px) {
+@media only screen and (max-width:400px) {
 
     
     .wrapper {
@@ -196,7 +203,7 @@ footer {
     .wrapper {
         display:grid;
         grid-template-areas: 
-            "title title"
+            "nav title"
             "nav about-us"
             "nav bios"
             "nav reviews"
@@ -208,6 +215,10 @@ footer {
 
     .nav {
         width: 12rem;
+    }
+
+    .nav__items {
+        flex-direction: column;
     }
 
     .profile__info {
@@ -220,7 +231,7 @@ footer {
     .wrapper {
         display:grid;
         grid-template-areas: 
-            "title title"
+            "nav title"
             "nav about-us"
             "nav bios"
             "nav reviews"
@@ -232,6 +243,10 @@ footer {
 
     .nav {
         width: 12rem;
+    }
+
+    .nav__items {
+        flex-direction: column;
     }
 
     .profile__info {
