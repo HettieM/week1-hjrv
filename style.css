@@ -1,10 +1,18 @@
 :root {
-    --colour1: hsl(202, 15%, 95%);
-    --colour2: hsl(205, 24%, 88%);
-    --colour3: hsl(210, 50%, 40%);
-    --colour4: hsl(215, 23%, 41%);
-    --colour5: hsl(222, 32%, 15%);
-    --colour6: pink;
+    --submit-colour: hsl(202, 15%, 95%);
+    --background-colour: hsl(205, 24%, 88%);
+    --link-colour: hsl(210, 50%, 40%);
+    --footer-colour: hsl(215, 23%, 41%);
+    --nav-colour: hsl(222, 32%, 15%);
+    --hover-colour: pink;
+
+
+    --submit-colour: hsl(202, 15%, 95%);
+    --background-colour: hsl(205, 24%, 88%);
+    --link-colour: hsl(210, 50%, 40%);
+    --footer-colour: hsl(215, 23%, 41%);
+    --nav-colour: hsl(222, 32%, 15%);
+    --hover-colour: pink;
 }
 
 h1 {
@@ -26,29 +34,29 @@ h3 {
 }
 
 a {
-    color: var(--colour3);
-    border-bottom: 0.15rem dotted var(--colour4);
+    color: var(--link-colour);
+    border-bottom: 0.15rem dotted var(--footer-colour);
     margin: 10rem 0 10rem;
 }
 
 .nav a {
-    color: var(--colour2);
-    border-bottom: 0.15rem dotted var(--colour1);
+    color: var(--background-colour);
+    border-bottom: 0.15rem dotted var(--submit-colour);
 }
 
 .nav a {
-    color: var(--colour2);
-    border-bottom: 0.15rem dotted var(--colour1);
+    color: var(--background-colour);
+    border-bottom: 0.15rem dotted var(--submit-colour);
 }
 
 a:hover {
     color: var(--colour);
-    border: 0.15rem dotted var(--colour4);
+    border: 0.15rem dotted var(--footer-colour);
 }
 
 .nav a:hover {
-    color: var(--colour6);
-    border-bottom: 0.15rem dotted var(--colour1);
+    color: var(--hover-colour);
+    border-bottom: 0.15rem dotted var(--submit-colour);
 }
 
 section {
@@ -61,14 +69,14 @@ article {
 }
 
 footer {
-    background-color: var(--colour4);
-    color: var(--colour2);
+    background-color: var(--footer-colour);
+    color: var(--background-colour);
 }
 
 .wrapper{
     display: grid;
-    background-color: var(--colour2);
-    color: var(--colour5);
+    background-color: var(--background-colour);
+    color: var(--nav-colour);
     grid-template-areas: 
     "nav"
     "title"
@@ -90,8 +98,8 @@ footer {
 
 .nav {
     grid-area: nav;
-    background-color: var(--colour5);
-    color: var(--colour2);
+    background-color: var(--nav-colour);
+    color: var(--background-colour);
 }
 
 .nav__items {
@@ -172,13 +180,13 @@ footer {
     grid-area:footer;
 }
 
-@media only screen and (min-width:400px) {
+@media only screen and (max-width:400px) {
 
     
     .wrapper {
         display:grid;
         grid-template-areas: 
-            "title title"
+            "nav title"
             "nav about-us"
             "nav bios"
             "nav reviews"
@@ -202,7 +210,7 @@ footer {
     .wrapper {
         display:grid;
         grid-template-areas: 
-            "title title"
+            "nav title"
             "nav about-us"
             "nav bios"
             "nav reviews"
@@ -214,6 +222,10 @@ footer {
 
     .nav {
         width: 12rem;
+    }
+
+    .nav__items {
+        flex-direction: column;
     }
 
     .profile__info {
@@ -238,6 +250,10 @@ footer {
 
     .nav {
         width: 12rem;
+    }
+
+    .nav__items {
+        flex-direction: column;
     }
 
     .profile__info {
