@@ -25,6 +25,7 @@ h3 {
     text-align: left;
 }
 
+
 a {
     color: var(--link-colour);
     border-bottom: 0.15rem dotted var(--footer-colour);
@@ -38,7 +39,7 @@ a {
 }
 
 a:hover {
-    color: var(--colour);
+    color: var(--nav-colour);
     border: 0.15rem dotted var(--footer-colour);
 }
 
