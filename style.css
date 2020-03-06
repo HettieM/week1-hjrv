@@ -10,7 +10,7 @@
 }
 
 :root {
-    --submit-colour: hsl(202, 15%, 95%); /*unassigned right now */
+    --submit-colour: hsl(202, 15%, 95%);
     --background-colour: hsl(205, 24%, 88%);
     --link-colour: hsl(210, 50%, 40%);
     --footer-colour: hsl(215, 23%, 41%);
@@ -38,12 +38,18 @@ h3 {
 
 a {
     color: var(--link-colour);
-    border-bottom: 0.15rem dotted var(--colour4);
+    border-bottom: 0.15rem dotted var(--footer-colour);
+    text-decoration: none;
 }
 
-a:hover {
-    color: var(--nav-colour);
-    border: 0.15rem dotted var(--colour4);
+.nav a {
+    color: var(--background-colour);
+    border-bottom: 0.15rem dotted var(--colour1);
+}
+
+.nav a:hover {
+    color: var(--submit-colour);
+    border-bottom: 0.15rem dotted var(--submit-colour);
 }
 
 section {
@@ -52,7 +58,7 @@ section {
 
 
 footer {
-    background-color: var(--colour4);
+    background-color: var(--footer-colour);
     color: var(--background-colour);
 }
 
