@@ -10,12 +10,12 @@
 }
 
 :root {
-    --colour1: hsl(202, 15%, 95%);
-    --colour2: hsl(205, 24%, 88%);
-    --colour3: hsl(210, 50%, 40%);
-    --colour4: hsl(215, 23%, 41%);
-    --colour5: hsl(222, 32%, 15%);
-    --colour6: pink;
+    --submit-colour: hsl(202, 15%, 95%); /*unassigned right now */
+    --background-colour: hsl(205, 24%, 88%);
+    --link-colour: hsl(210, 50%, 40%);
+    --footer-colour: hsl(215, 23%, 41%);
+    --nav-colour: hsl(222, 32%, 15%);
+    --hover-colour: pink;
 }
 
 h1 {
@@ -37,12 +37,12 @@ h3 {
 }
 
 a {
-    color: var(--colour3);
+    color: var(--link-colour);
     border-bottom: 0.15rem dotted var(--colour4);
 }
 
 a:hover {
-    color: var(--colour5);
+    color: var(--nav-colour);
     border: 0.15rem dotted var(--colour4);
 }
 
@@ -53,13 +53,13 @@ section {
 
 footer {
     background-color: var(--colour4);
-    color: var(--colour2);
+    color: var(--background-colour);
 }
 
 .wrapper{
     display: grid;
-    background-color: var(--colour2);
-    color: var(--colour5);
+    background-color: var(--background-colour);
+    color: var(--nav-colour);
     grid-template-areas: 
     "nav"
     "title"
@@ -73,11 +73,8 @@ footer {
 
 .nav {
     grid-area: nav;
-    background-color: var(--colour5);
-    color: var(--colour2);
-}
-
-.nav__navbar {
+    background-color: var(--nav-colour);
+    color: var(--background-colour);
 }
 
 .nav__items {
@@ -103,14 +100,8 @@ footer {
     font-family: 'Permanent Marker', cursive;
 }
 
-.about__intro {
-}
-
 .profile {
     grid-area: bios;
-}
-
-.profile__info {
 }
 
 .profile__img {
@@ -123,15 +114,9 @@ footer {
     grid-area: reviews;
 }
 
-.review__quote {
-}
-
 .contact {
     grid-area:contact;
     max-width: 50rem;
-}
-
-.contact__form {
 }
 
 .contact__list {
@@ -161,6 +146,9 @@ footer {
 .contact__button{
     width: 10rem;
     height: 2rem;
+    background-color: var(--submit-colour);
+    border: 1px solid var(--link-colour);
+    padding-left: 0.25rem;
 }
 .footer {
     grid-area:footer;
@@ -175,7 +163,7 @@ footer {
     .wrapper {
         display:grid;
         grid-template-areas: 
-            "title title"
+            "nav title"
             "nav about-us"
             "nav bios"
             "nav reviews"
