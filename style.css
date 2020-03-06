@@ -36,6 +36,11 @@ a {
     border-bottom: 0.15rem dotted var(--colour1);
 }
 
+.nav a {
+    color: var(--colour2);
+    border-bottom: 0.15rem dotted var(--colour1);
+}
+
 a:hover {
     color: var(--colour);
     border: 0.15rem dotted var(--colour4);
