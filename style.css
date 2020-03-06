@@ -39,11 +39,22 @@ h3 {
 a {
     color: var(--colour3);
     border-bottom: 0.15rem dotted var(--colour4);
+    margin: 10rem 0 10rem;
+}
+
+.nav a {
+    color: var(--colour2);
+    border-bottom: 0.15rem dotted var(--colour1);
 }
 
 a:hover {
-    color: var(--colour5);
+    color: var(--colour);
     border: 0.15rem dotted var(--colour4);
+}
+
+.nav a:hover {
+    color: var(--colour1);
+    border-bottom: 0.15rem dotted var(--colour1);
 }
 
 section {
