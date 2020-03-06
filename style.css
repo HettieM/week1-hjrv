@@ -5,14 +5,6 @@
     --footer-colour: hsl(215, 23%, 41%);
     --nav-colour: hsl(222, 32%, 15%);
     --hover-colour: pink;
-
-
-    --submit-colour: hsl(202, 15%, 95%);
-    --background-colour: hsl(205, 24%, 88%);
-    --link-colour: hsl(210, 50%, 40%);
-    --footer-colour: hsl(215, 23%, 41%);
-    --nav-colour: hsl(222, 32%, 15%);
-    --hover-colour: pink;
 }
 
 h1 {
@@ -37,11 +29,7 @@ a {
     color: var(--link-colour);
     border-bottom: 0.15rem dotted var(--footer-colour);
     margin: 10rem 0 10rem;
-}
-
-.nav a {
-    color: var(--background-colour);
-    border-bottom: 0.15rem dotted var(--submit-colour);
+    text-decoration: none;
 }
 
 .nav a {
@@ -55,7 +43,7 @@ a:hover {
 }
 
 .nav a:hover {
-    color: var(--hover-colour);
+    color: var(--submit-colour);
     border-bottom: 0.15rem dotted var(--submit-colour);
 }
 
@@ -148,6 +136,7 @@ footer {
     grid-area:contact;
     max-width: 50rem;
 }
+
 .contact__list {
     margin: 0;
     display: flex;
@@ -175,6 +164,9 @@ footer {
 .contact__button{
     width: 10rem;
     height: 2rem;
+    background-color: var(--submit-colour);
+    border: 1px solid var(--link-colour);
+    padding-left: 0.25rem;
 }
 .footer {
     grid-area:footer;
